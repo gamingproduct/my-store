@@ -35,12 +35,17 @@ nav ul li{
 nav ul li a{
     color:white;
     text-decoration:none;
-
-   .hero{
+}
+  nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+.hero{
     height:500px;
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
