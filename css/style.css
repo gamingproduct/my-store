@@ -39,7 +39,7 @@ nav ul li a{
     .hero{
     height:500px;
     background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1600");
+    url("file:///C:/Users/AFFU%20OFFICIAL%20PK/Downloads/hero.jpg");
     background-size:cover;
     background-position:center;
     display:flex;
