@@ -35,4 +35,47 @@ nav ul li{
 nav ul li a{
     color:white;
     text-decoration:none;
+
+    .hero{
+    height:500px;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e68900;
+}
    
