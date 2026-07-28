@@ -1,0 +1,5 @@
+my-store/
+│
+├── images/
+│   ├── hero.jpg
+│   └── .gitkeep
