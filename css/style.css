@@ -147,8 +147,20 @@ nav ul li a:hover{
     cursor:pointer;
 }
 
-.category-card:hover{
-    transform:translateY(-10px);
+.category-card{
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+    cursor:pointer;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.category-card h3{
+    font-size:22px;
+    color:#333;
+}
 }
 
 }
