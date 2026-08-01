@@ -28,7 +28,13 @@ header{
 }
 
 .logo{
-    flex:1;
+    flex:0 0 auto;
+}
+
+.logo h2{
+    font-size:28px;
+    color:#ff9800;
+    white-space:nowrap;
 }
 
 .right-side{
