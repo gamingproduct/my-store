@@ -95,30 +95,47 @@ header{
     background-repeat:no-repeat;
 }
 
-.overlay{
-    max-width:700px;
-    padding:40px;
+.page-tag{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:8px 20px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+    letter-spacing:2px;
 }
 
 .overlay h1{
-    font-size:52px;
+    font-size:60px;
     margin-bottom:20px;
+    color:#fff;
 }
 
 .overlay p{
-    font-size:20px;
-    color:#ddd;
-    margin-bottom:30px;
+    font-size:22px;
+    line-height:1.8;
+    color:#e5e5e5;
+    max-width:850px;
+    margin:20px auto;
 }
 
 .btn{
     display:inline-block;
-    padding:15px 35px;
+    margin-top:30px;
+    padding:15px 40px;
     background:#ff9800;
     color:white;
+    border-radius:40px;
     text-decoration:none;
-    border-radius:30px;
     font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#ff9800;
+    transform:translateY(-3px);
 }
 
 /* FOOTER */
