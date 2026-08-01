@@ -37,6 +37,15 @@ header{
     border-radius:25px 0 0 25px;
     font-size:15px;
 }
+.search-box button{
+    width:55px;
+    height:45px;
+    border:none;
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+    border-radius:0 25px 25px 0;
+}
 <a href="#" class="cart">
 🛒 Cart
 </a>
