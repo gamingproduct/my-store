@@ -28,7 +28,15 @@ header{
     display:flex;
     align-items:center;
 }
-
+.search-box input{
+    width:350px;
+    height:45px;
+    padding:0 15px;
+    border:none;
+    outline:none;
+    border-radius:25px 0 0 25px;
+    font-size:15px;
+}
 <a href="#" class="cart">
 🛒 Cart
 </a>
