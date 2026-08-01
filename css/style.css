@@ -18,7 +18,11 @@ header{
 <h2>🎮 Gaming Product</h2>
 </div>
 
-<div class="right-side">
+.right-side{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
 
 <div class="search-box">
 <input type="text" placeholder="Search Products...">
