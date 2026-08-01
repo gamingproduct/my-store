@@ -24,10 +24,10 @@ header{
     gap:20px;
 }
 
-<div class="search-box">
-<input type="text" placeholder="Search Products...">
-<button>🔍</button>
-</div>
+.search-box{
+    display:flex;
+    align-items:center;
+}
 
 <a href="#" class="cart">
 🛒 Cart
