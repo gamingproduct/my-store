@@ -44,6 +44,13 @@
 Premium Gaming Accessories & Electronics
 at Affordable Prices.
 </p>
+.hero{
+    min-height:calc(100vh - 80px);
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
 <a href="#" class="btn">
 Shop Now
