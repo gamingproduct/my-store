@@ -13,8 +13,6 @@ body{
     padding-top:80px;
 }
 
-/* Header */
-
 header{
     position:fixed;
     top:0;
@@ -25,20 +23,20 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 30px;
+    padding:0 25px;
     z-index:1000;
 }
 
-.logo h2{
-    color:#ff9800;
-    font-size:30px;
+.logo{
+    flex:1;
 }
 
 .right-side{
+    flex:1;
     display:flex;
+    justify-content:flex-end;
     align-items:center;
     gap:10px;
-    flex-wrap:nowrap;
 }
 
 .search-box{
@@ -47,43 +45,36 @@ header{
 }
 
 .search-box input{
-    width:250px;
-}
-    height:45px;
+    width:220px;
+    height:42px;
+    padding:0 15px;
     border:none;
     outline:none;
-    padding:0 15px;
     border-radius:25px 0 0 25px;
-    font-size:15px;
 }
 
 .search-box button{
-    width:55px;
-    height:45px;
+    width:50px;
+    height:42px;
     border:none;
     background:#ff9800;
-    color:#fff;
-    cursor:pointer;
+    color:white;
     border-radius:0 25px 25px 0;
+    cursor:pointer;
 }
 
 .cart{
-    height:45px;
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:0 20px;
+    min-width:110px;
+    height:42px;
+    padding:0 18px;
     background:#ff9800;
-    color:#fff;
+    color:white;
     text-decoration:none;
     border-radius:25px;
     font-weight:bold;
-    transition:.3s;
-}
-
-.cart:hover{
-    background:#fff;
-    color:#ff9800;
 }
 
 /* Hero */
