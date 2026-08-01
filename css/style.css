@@ -49,6 +49,18 @@ header{
 <a href="#" class="cart">
 🛒 Cart
 </a>
+.cart{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:45px;
+    padding:0 20px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
 
 </div>
 
