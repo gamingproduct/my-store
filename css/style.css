@@ -36,15 +36,6 @@
 
 <section class="hero">
 
-
-.hero{
-    min-height:calc(100vh - 80px);
-    background:url("../images/hero.jpg") center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
 <div class="overlay">
 
 <h1>LEVEL UP YOUR GAMING EXPERIENCE</h1>
