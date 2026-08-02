@@ -13,5 +13,38 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const db = getFirestore(app);
+
+async function loadProducts() {
+
+    const productsContainer = document.getElementById("products");
+
+    const querySnapshot = await getDocs(collection(db, "products"));
+
+    querySnapshot.forEach((doc) => {
+
+        const product = doc.data();
+
+        productsContainer.innerHTML += `
+
+        <div class="product-card">
+
+            <img src="${product.image}" alt="${product.title}">
+
+            <h3>${product.title}</h3>
+
+            <p>$${product.price}</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+loadProducts();
 
 console.log("✅ Firebase Connected Successfully!");
