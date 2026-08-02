@@ -1,0 +1,29 @@
+media:
+  input: images
+  output: /images
+
+content:
+  - name: products
+    label: Products
+    type: collection
+    path: products
+    filename: "{primary}.json"
+
+    fields:
+      - name: title
+        label: Product Title
+        type: string
+        required: true
+
+      - name: price
+        label: Price
+        type: number
+        required: true
+
+      - name: image
+        label: Product Image
+        type: image
+
+      - name: description
+        label: Description
+        type: text
