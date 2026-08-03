@@ -1,6 +1,81 @@
-css/
-    admin.css
+<!DOCTYPE html>
+<html lang="en">
 
-js/
-    admin.js
-    firebase.js
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gaming Product Admin</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎮 Gaming Product Admin Panel</h1>
+
+<div class="card">
+
+<h2>Add New Product</h2>
+
+<input type="text" id="title" placeholder="Product Name">
+
+<input type="number" id="price" placeholder="Price">
+
+<input type="number" id="discount" placeholder="Discount Price">
+
+<select id="category">
+
+<option value="">Select Category</option>
+
+<option>Gaming Mouse</option>
+
+<option>Gaming Keyboard</option>
+
+<option>Gaming Headset</option>
+
+<option>Controller</option>
+
+<option>Monitor</option>
+
+<option>Gaming Chair</option>
+
+</select>
+
+<input type="text" id="brand" placeholder="Brand">
+
+<textarea id="description" placeholder="Product Description"></textarea>
+
+<h3>SEO</h3>
+
+<input type="text" id="focus" placeholder="Focus Keyphrase">
+
+<input type="text" id="variation" placeholder="Keyphrase Variations">
+
+<input type="text" id="metaTitle" placeholder="SEO Title">
+
+<textarea id="metaDescription" placeholder="Meta Description"></textarea>
+
+<h3>Product Images</h3>
+
+<input type="file" id="images" multiple>
+
+<br><br>
+
+<button id="saveBtn">
+Save Product
+</button>
+
+</div>
+
+</div>
+
+<script type="module" src="js/admin.js"></script>
+
+</body>
+
+</html>
