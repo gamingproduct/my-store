@@ -35,6 +35,9 @@ async function login() {
     await signInWithEmailAndPassword(auth, email, password);
 
     window.location.href = "admin.html";
+    loader.style.display = "none";
+loginBtn.disabled = false;
+loginBtn.textContent = "Login";
 
   } catch (err) {
 
