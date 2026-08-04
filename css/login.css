@@ -83,3 +83,27 @@ button:hover{
     margin-top:15px;
     text-align:center;
 }
+.password-box{
+    position:relative;
+    width:100%;
+}
+
+.password-box input{
+    width:100%;
+    padding-right:50px;
+}
+
+#togglePassword{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:20px;
+    user-select:none;
+    color:#ccc;
+}
+
+#togglePassword:hover{
+    color:#00e5ff;
+}
