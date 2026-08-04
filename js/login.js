@@ -1,5 +1,5 @@
 import { auth } from "./firebase.js";
-
+console.log("login.js loaded");
 import {
   signInWithEmailAndPassword,
   setPersistence,
