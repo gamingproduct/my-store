@@ -6,6 +6,11 @@ import {
   browserLocalPersistence,
   browserSessionPersistence
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+const loader = document.getElementById("loader");
+
+loader.style.display = "block";
+loginBtn.disabled = true;
+loginBtn.textContent = "Signing In...";
 
 const loginBtn = document.getElementById("loginBtn");
 
