@@ -1,54 +1,126 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-background:#111827;
-color:white;
+    background:#0f172a;
+    color:white;
 }
+
+/* Layout */
 
 .container{
-width:90%;
-max-width:1200px;
-margin:auto;
-padding:30px;
+    display:flex;
+    min-height:100vh;
 }
 
-h1{
-margin-bottom:20px;
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    background:#111827;
+    padding:30px 20px;
+    border-right:1px solid #374151;
 }
+
+.sidebar h2{
+    margin-bottom:30px;
+    color:#00e5ff;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:15px;
+    margin-bottom:10px;
+    background:#1f2937;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sidebar ul li:hover{
+    background:#00bcd4;
+    color:#000;
+}
+
+/* Main Content */
+
+.content{
+    flex:1;
+    padding:40px;
+}
+
+.content h1{
+    margin-bottom:20px;
+}
+
+/* Card */
 
 .card{
-background:#1f2937;
-padding:20px;
-border-radius:10px;
-margin-bottom:20px;
+    background:#1f2937;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
 }
+
+/* Form */
 
 input,
 textarea,
 select{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:none;
-border-radius:8px;
-font-size:16px;
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    background:#374151;
+    color:white;
+    font-size:15px;
 }
 
+input::placeholder,
+textarea::placeholder{
+    color:#d1d5db;
+}
+
+/* Button */
+
 button{
-background:#ff9800;
-color:white;
-border:none;
-padding:12px 20px;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
+    background:#00bcd4;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    width:100%;
+    transition:.3s;
 }
 
 button:hover{
-background:#ff7700;
+    background:#0097a7;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.container{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.content{
+    padding:20px;
+}
+
 }
