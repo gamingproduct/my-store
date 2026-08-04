@@ -6,7 +6,8 @@ import {
   browserLocalPersistence,
   browserSessionPersistence
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-
+console.log(loginBtn);
+console.log(togglePassword);
 const loginBtn = document.getElementById("loginBtn");
 const passwordInput = document.getElementById("password");
 const togglePassword = document.getElementById("togglePassword");
