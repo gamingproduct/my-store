@@ -67,3 +67,18 @@ alert(error.message);
 }
 
 }
+import { signOut } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+logoutBtn.addEventListener("click", async () => {
+
+    const ok = confirm("Are you sure you want to logout?");
+
+    if (!ok) return;
+
+    await signOut(auth);
+
+    window.location.href = "admin-login.html";
+
+});
