@@ -107,3 +107,21 @@ button:hover{
 #togglePassword:hover{
     color:#00e5ff;
 }
+.loader{
+    width:45px;
+    height:45px;
+    border:4px solid rgba(255,255,255,.2);
+    border-top:4px solid #00e5ff;
+    border-radius:50%;
+    animation:spin .8s linear infinite;
+    margin:20px auto;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
