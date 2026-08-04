@@ -1,62 +1,38 @@
-import { auth } from "./firebase.js";
-
-import {
-  signInWithEmailAndPassword,
-  setPersistence,
-  browserLocalPersistence,
-  browserSessionPersistence
-} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-const loader = document.getElementById("loader");
-
-loader.style.display = "block";
-loginBtn.disabled = true;
-loginBtn.textContent = "Signing In...";
-
-const loginBtn = document.getElementById("loginBtn");
-
-loginBtn.addEventListener("click", login);
-
 async function login() {
 
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;
-  const remember = document.getElementById("remember").checked;
-  const error = document.getElementById("error");
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const remember = document.getElementById("remember").checked;
+    const error = document.getElementById("error");
+    const loader = document.getElementById("loader");
 
-  error.textContent = "";
+    error.textContent = "";
 
-  try {
+    loader.style.display = "block";
+    loginBtn.disabled = true;
+    loginBtn.textContent = "Signing In...";
 
-    await setPersistence(
-      auth,
-      remember ? browserLocalPersistence : browserSessionPersistence
-    );
+    try {
 
-    await signInWithEmailAndPassword(auth, email, password);
+        await setPersistence(
+            auth,
+            remember ? browserLocalPersistence : browserSessionPersistence
+        );
 
-    window.location.href = "admin.html";
-    loader.style.display = "none";
-loginBtn.disabled = false;
-loginBtn.textContent = "Login";
+        await signInWithEmailAndPassword(auth, email, password);
 
-  } catch (err) {
+        loader.style.display = "none";
 
-    error.textContent = err.message;
+        window.location.href = "admin.html";
 
-  }
+    } catch (err) {
 
-}
-const passwordInput = document.getElementById("password");
-const togglePassword = document.getElementById("togglePassword");
+        loader.style.display = "none";
+        loginBtn.disabled = false;
+        loginBtn.textContent = "Login";
 
-togglePassword.addEventListener("click", () => {
+        error.textContent = err.message;
 
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        togglePassword.textContent = "🙈";
-    } else {
-        passwordInput.type = "password";
-        togglePassword.textContent = "👁️";
     }
 
-});
+}
