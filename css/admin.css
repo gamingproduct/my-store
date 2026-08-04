@@ -124,3 +124,48 @@ button:hover{
 }
 
 }
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,
+td{
+padding:15px;
+text-align:left;
+border-bottom:1px solid #374151;
+}
+
+th{
+background:#111827;
+}
+
+td{
+background:#1f2937;
+}
+
+td img{
+width:60px;
+height:60px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.action-btn{
+padding:8px 12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-right:5px;
+}
+
+.edit-btn{
+background:#2196f3;
+color:white;
+}
+
+.delete-btn{
+background:#f44336;
+color:white;
+}
