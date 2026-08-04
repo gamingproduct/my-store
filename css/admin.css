@@ -169,3 +169,25 @@ color:white;
 background:#f44336;
 color:white;
 }
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin:15px 0;
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    background:#1f2937;
+    padding:15px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#374151;
+}
