@@ -16,66 +16,85 @@
 
 <div class="container">
 
-<h1>🎮 Gaming Product Admin Panel</h1>
+    <aside class="sidebar">
 
-<div class="card">
+        <h2>🎮 Admin</h2>
 
-<h2>Add New Product</h2>
+        <ul>
 
-<input type="text" id="title" placeholder="Product Name">
+            <li>📊 Dashboard</li>
 
-<input type="number" id="price" placeholder="Price">
+            <li>📦 Products</li>
 
-<input type="number" id="discount" placeholder="Discount Price">
+            <li>📂 Categories</li>
 
-<select id="category">
+            <li>⭐ Reviews</li>
 
-<option value="">Select Category</option>
+            <li>⚙ Settings</li>
 
-<option>Gaming Mouse</option>
+            <li>🚪 Logout</li>
 
-<option>Gaming Keyboard</option>
+        </ul>
 
-<option>Gaming Headset</option>
+    </aside>
 
-<option>Controller</option>
+    <main class="content">
 
-<option>Monitor</option>
+        <h1>Add New Product</h1>
 
-<option>Gaming Chair</option>
+        <div class="card">
 
-</select>
+            <input type="text" id="title" placeholder="Product Name">
 
-<input type="text" id="brand" placeholder="Brand">
+            <input type="number" id="price" placeholder="Price">
 
-<textarea id="description" placeholder="Product Description"></textarea>
+            <input type="number" id="discount" placeholder="Discount Price">
 
-<h3>SEO</h3>
+            <select id="category">
 
-<input type="text" id="focus" placeholder="Focus Keyphrase">
+                <option value="">Select Category</option>
 
-<input type="text" id="variation" placeholder="Keyphrase Variations">
+                <option>Gaming Mouse</option>
 
-<input type="text" id="metaTitle" placeholder="SEO Title">
+                <option>Gaming Keyboard</option>
 
-<textarea id="metaDescription" placeholder="Meta Description"></textarea>
+                <option>Gaming Headset</option>
 
-<h3>Product Images</h3>
+                <option>Controller</option>
 
-<input type="file" id="images" multiple>
+                <option>Monitor</option>
 
-<br><br>
+                <option>Gaming Chair</option>
 
-<button id="saveBtn">
-Save Product
-</button>
+            </select>
+
+            <input type="text" id="brand" placeholder="Brand">
+
+            <textarea id="description" placeholder="Product Description"></textarea>
+
+            <h3>SEO</h3>
+
+            <input type="text" id="focus" placeholder="Focus Keyphrase">
+
+            <input type="text" id="variation" placeholder="Keyphrase Variations">
+
+            <input type="text" id="metaTitle" placeholder="SEO Title">
+
+            <textarea id="metaDescription" placeholder="Meta Description"></textarea>
+
+            <h3>Product Images</h3>
+
+            <input type="file" id="images" multiple>
+
+            <br><br>
+
+            <button id="saveBtn">Save Product</button>
+
+        </div>
+
+    </main>
 
 </div>
-
-</div>
-
-<script type="module" src="js/admin.js"></script>
-
 </body>
 
 </html>
