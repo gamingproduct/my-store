@@ -44,31 +44,98 @@
 
 <div class="dashboard-cards">
 
-    <div class="card stat-card">
-        <h3>Total Products</h3>
-        <h2 id="totalProducts">0</h2>
-    </div>
+    <h1>Products</h1>
 
-    <div class="card stat-card">
-        <h3>Categories</h3>
-        <h2 id="totalCategories">0</h2>
-    </div>
+<div class="toolbar">
 
-    <div class="card stat-card">
-        <h3>Reviews</h3>
-        <h2 id="totalReviews">0</h2>
-    </div>
+    <button class="primary-btn" id="addProductBtn">
+        + Add New Product
+    </button>
 
-    <div class="card stat-card">
-        <h3>Visitors</h3>
-        <h2>0</h2>
+    <div class="toolbar-right">
+
+        <input
+            type="text"
+            placeholder="Search Products..."
+            id="searchProduct">
+
+        <select id="filterCategory">
+
+            <option value="">All Categories</option>
+
+        </select>
+
+        <button>
+            Filter
+        </button>
+
     </div>
 
 </div>
 
-<div class="dashboard-grid">
+<div class="card">
 
-    <div class="card">
+    <div class="bulk-actions">
+
+        <select>
+
+            <option>Bulk Actions</option>
+
+            <option>Delete</option>
+
+            <option>Publish</option>
+
+            <option>Draft</option>
+
+        </select>
+
+        <button>Apply</button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th><input type="checkbox"></th>
+
+                <th>Image</th>
+
+                <th>Product</th>
+
+                <th>Category</th>
+
+                <th>Brand</th>
+
+                <th>Price</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="productsTable">
+
+            <tr>
+
+                <td colspan="8" style="text-align:center">
+
+                    No Products Found
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
 
         <h2>Recent Products</h2>
 
