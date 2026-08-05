@@ -560,3 +560,320 @@ footer{
     color:#94a3b8;
 
 }
+/* ==========================================
+   GAMING CATEGORIES
+========================================== */
+
+.categories{
+
+    padding:90px 0;
+
+    background:#f8fafc;
+
+}
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:25px;
+
+    margin-top:45px;
+
+}
+
+.category-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#111827;
+
+}
+
+.category-card:hover h3{
+
+    color:#fff;
+
+}
+
+.category-card:hover p{
+
+    color:#ddd;
+
+}
+
+.category-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#f1f5f9;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    transition:.35s;
+
+}
+
+.category-card:hover .category-icon{
+
+    background:#ff9800;
+
+    color:#fff;
+
+    transform:rotate(8deg) scale(1.08);
+
+}
+
+.category-card h3{
+
+    margin-top:22px;
+
+    font-size:20px;
+
+    color:#111827;
+
+    transition:.35s;
+
+}
+
+.category-card p{
+
+    margin-top:10px;
+
+    color:#666;
+
+    font-size:14px;
+
+    transition:.35s;
+
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter{
+
+    padding:90px 0;
+
+    background:#111827;
+
+    text-align:center;
+
+}
+
+.newsletter h2{
+
+    color:#fff;
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.newsletter p{
+
+    color:#cbd5e1;
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+.newsletter-form{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.newsletter-form input{
+
+    width:420px;
+
+    max-width:90%;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:40px;
+
+    padding:0 25px;
+
+    font-size:16px;
+
+}
+
+.newsletter-form button{
+
+    height:56px;
+
+    padding:0 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ff9800;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.newsletter-form button:hover{
+
+    background:#ff7b00;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0f172a;
+
+    padding:70px 0 30px;
+
+}
+
+.footer-container{
+
+    width:92%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:45px;
+
+}
+
+.footer-logo{
+
+    color:#ff9800;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+.footer-about{
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+}
+
+.footer-title{
+
+    color:#fff;
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#cbd5e1;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#ff9800;
+
+    padding-left:8px;
+
+}
+
+.copyright{
+
+    margin-top:60px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+}
