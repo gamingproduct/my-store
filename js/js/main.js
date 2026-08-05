@@ -9,24 +9,41 @@ const container = document.getElementById("featuredProducts");
 
 async function loadProducts(){
 
-    container.innerHTML = "";
+    if(!container) return;
 
-    const snapshot = await getDocs(collection(db,"products"));
+    container.innerHTML = "<h2>Loading Products...</h2>";
 
-    snapshot.forEach(doc=>{
+    try{
 
-        const product = doc.data();
+        const snapshot = await getDocs(collection(db,"products"));
 
-        const image =
-            product.images && product.images.length
-            ? product.images[0]
-            : "images/no-image.png";
+        container.innerHTML = "";
 
-        container.innerHTML += `
+        if(snapshot.empty){
+
+            container.innerHTML = `
+                <h2 style="text-align:center;padding:50px;">
+                    No Products Found
+                </h2>
+            `;
+            return;
+        }
+
+        snapshot.forEach(doc=>{
+
+            const product = doc.data();
+
+            const image =
+                product.images &&
+                product.images.length
+                ? product.images[0]
+                : "images/no-image.png";
+
+            container.innerHTML += `
 
 <div class="product-card">
 
-    ${product.discount ? `<div class="sale-badge">SALE</div>` : ""}
+    ${product.discount ? `<div class="sale-badge">-${Math.round((1-(product.discount/product.price))*100)}%</div>` : ""}
 
     <div class="product-image">
 
@@ -34,11 +51,11 @@ async function loadProducts(){
 
         <div class="product-actions">
 
-            <button>❤</button>
+            <button title="Wishlist">❤</button>
 
-            <button>👁</button>
+            <button title="Quick View">👁</button>
 
-            <button>🛒</button>
+            <button title="Add Cart">🛒</button>
 
         </div>
 
@@ -48,13 +65,19 @@ async function loadProducts(){
 
         <div class="product-category">
 
-            ${product.category}
+            ${product.category || "Gaming"}
 
         </div>
 
         <div class="product-title">
 
             ${product.title}
+
+        </div>
+
+        <div class="product-rating">
+
+            ⭐⭐⭐⭐⭐
 
         </div>
 
@@ -70,13 +93,33 @@ async function loadProducts(){
 
         </div>
 
+        <button class="add-cart">
+
+            Add To Cart
+
+        </button>
+
     </div>
 
 </div>
 
 `;
 
-    });
+        });
+
+    }
+
+    catch(error){
+
+        console.error(error);
+
+        container.innerHTML = `
+            <h2 style="text-align:center;color:red;">
+                Failed To Load Products
+            </h2>
+        `;
+
+    }
 
 }
 
