@@ -40,58 +40,111 @@
     </aside>
 
     <main class="content">
+<h1>Dashboard</h1>
 
-        <h1>Add New Product</h1>
+<div class="dashboard-cards">
 
-        <div class="card">
+    <div class="card stat-card">
+        <h3>Total Products</h3>
+        <h2 id="totalProducts">0</h2>
+    </div>
 
-            <input type="text" id="title" placeholder="Product Name">
+    <div class="card stat-card">
+        <h3>Categories</h3>
+        <h2 id="totalCategories">0</h2>
+    </div>
 
-            <input type="number" id="price" placeholder="Price">
+    <div class="card stat-card">
+        <h3>Reviews</h3>
+        <h2 id="totalReviews">0</h2>
+    </div>
 
-            <input type="number" id="discount" placeholder="Discount Price">
+    <div class="card stat-card">
+        <h3>Visitors</h3>
+        <h2>0</h2>
+    </div>
 
-            <select id="category">
+</div>
 
-                <option value="">Select Category</option>
+<div class="dashboard-grid">
 
-                <option>Gaming Mouse</option>
+    <div class="card">
 
-                <option>Gaming Keyboard</option>
+        <h2>Recent Products</h2>
 
-                <option>Gaming Headset</option>
+        <table>
 
-                <option>Controller</option>
+            <thead>
 
-                <option>Monitor</option>
+                <tr>
 
-                <option>Gaming Chair</option>
+                    <th>Product</th>
 
-            </select>
+                    <th>Price</th>
 
-            <input type="text" id="brand" placeholder="Brand">
+                    <th>Status</th>
 
-            <textarea id="description" placeholder="Product Description"></textarea>
+                </tr>
 
-            <h3>SEO</h3>
+            </thead>
 
-            <input type="text" id="focus" placeholder="Focus Keyphrase">
+            <tbody id="recentProducts">
 
-            <input type="text" id="variation" placeholder="Keyphrase Variations">
+                <tr>
 
-            <input type="text" id="metaTitle" placeholder="SEO Title">
+                    <td colspan="3">
 
-            <textarea id="metaDescription" placeholder="Meta Description"></textarea>
+                        No products found.
 
-            <h3>Product Images</h3>
+                    </td>
 
-            <input type="file" id="images" multiple>
+                </tr>
 
-            <br><br>
+            </tbody>
 
-            <button id="saveBtn">Save Product</button>
+        </table>
 
-        </div>
+    </div>
+
+    <div class="card">
+
+        <h2>Recent Reviews</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>User</th>
+
+                    <th>Rating</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td colspan="3">
+
+                        No reviews found.
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
         <div class="card">
 
     <h2>Products</h2>
